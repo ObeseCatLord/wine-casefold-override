@@ -35,8 +35,8 @@ The default installation layout is:
 
 ```text
 ~/.local/lib/wine-casefold-override/
-├── lib/libwinecasefold.so
-└── lib32/libwinecasefold.so
+|-- lib/libwinecasefold.so
+`-- lib32/libwinecasefold.so
 ```
 
 The i686 library is needed when the Proton process tree contains 32-bit helpers.
