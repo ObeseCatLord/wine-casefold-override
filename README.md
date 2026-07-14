@@ -50,11 +50,13 @@ make
 make test
 make build32
 make test32
+make release
 ```
 
 The 32-bit targets require the distribution's multilib C development packages.
 `make` creates `build/libwinecasefold.so`; `make build32` creates
-`build/libwinecasefold32.so`.
+`build/libwinecasefold32.so`. `make release` tests both architectures and creates
+stripped, host-path-free release artifacts plus `SHA256SUMS` in `dist/`.
 
 ## Minimal Use
 
